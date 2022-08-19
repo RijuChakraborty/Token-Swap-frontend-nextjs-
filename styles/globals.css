@@ -4,6 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background-image: url("../background.jpg"); */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+  font-size: 20px;
 }
 
 a {
@@ -21,6 +28,107 @@ a {
   }
   body {
     color: white;
-    background: black;
+    /* background: black; */
+  }
+}
+
+#TokenImage{
+  display: inline-block;
+  margin: 15px 25px 0px 0px;
+  float: left;
+  /* border: solid 1px; */
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  background-image: url("../rockToken.png");
+  background-size: cover;
+}
+
+h1{
+  display: inline-block;
+  font-size: 30px;
+  /* width: 100px; */
+  /* border: solid 1px; */
+}
+
+.connect{
+  display: inline-block;
+  float: right;
+  margin: 22px 0px;
+}
+
+.intro{
+  margin: 50px 20px;
+}
+
+.rate{
+  margin: auto;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #4ddcdc;
+}
+
+.box{
+  margin: 75px 0px;
+  padding: 10px 20px;
+  border: solid 2px cyan;
+  border-radius: 10px;
+}
+
+.subbox{
+  margin: 25px 10vw;
+  padding: 10px 20px;
+  border: solid 1px grey;
+  border-radius: 10px;
+  text-align: center;
+  /* width: 100px; */
+}
+
+.subbox:hover{
+  border: solid 2px grey;
+}
+
+.quantity{
+  margin: 0px 20px;
+  width: 30vw;
+  border-width: 0px 0px 2px 0px;
+  border-color: #ffffff80;
+  background: #00000000;
+  height: 40px;
+  font-size: 20px;
+}
+
+.subButton{
+  margin: 10px 20px;
+  height: 40px;
+  width: 60px;
+  font-size: 20px;
+  background: #00000000;
+  border: solid 1px grey;
+  border-radius: 5px;
+}
+
+#buyButton:hover{
+  box-shadow: 0px 1px 15px #0dff00;
+  border-color: #0dff00;
+  color: #0dff00;
+}
+
+#sellButton:hover{
+  box-shadow: 0px 1px 15px #ff0053;
+  border-color: #ff0053;
+  color: #ff0053;
+}
+
+@media only screen and (max-width: 770px) {
+  .connect {
+    display: contents;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  h1{
+    display: block;
   }
 }
